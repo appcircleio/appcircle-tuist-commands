@@ -29,7 +29,7 @@ tuist_path = env_has_key("AC_TUIST_PATH")
 tuist_commands = env_has_key("AC_TUIST_COMMANDS") || abort("Missing AC_TUIST_COMMANDS")
 
 if tuist_path
-    options += "#{tuist_path}"
+    options += "-p #{tuist_path}"
 end
 
 runCommand("#{tuist_commands} #{options}")
