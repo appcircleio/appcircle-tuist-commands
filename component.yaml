@@ -1,7 +1,7 @@
 platform: iOS
 buildPlatform:
-displayName: Tuist
-description: "Install Tuist and Generate a Project."
+displayName: Tuist Commands
+description: "Run Tuist Commands for Project."
 inputs:
 - key: "AC_TUIST_PATH"
   defaultValue: "$AC_REPOSITORY_DIR"
