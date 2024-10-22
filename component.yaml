@@ -11,7 +11,7 @@ inputs:
 - key: "AC_TUIST_COMMANDS"
   isRequired: true
   title: Tuist Commands
-  description: The commands of Tuist, you can specify the specific Tuist command to run. For example; `tuist build` or `tuist install`
+  description: The commands of Tuist, you can specify the specific Tuist command to run. For example; `tuist build` or `tuist install`.
 processFilename: ruby
 processArguments: '%AC_STEP_TEMP%/main.rb'
 files:
