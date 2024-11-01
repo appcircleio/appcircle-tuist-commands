@@ -1,0 +1,18 @@
+platform: iOS
+buildPlatform: ObjectiveCSwift
+displayName: Tuist Commands
+description: "Run Tuist Commands."
+inputs:
+- key: "AC_TUIST_PATH"
+  defaultValue: "$AC_REPOSITORY_DIR"
+  isRequired: true
+  title: Project Path
+  description: The path to the directory of Tuist project. By default, it is set to the root directory of the cloned repository.
+- key: "AC_TUIST_COMMANDS"
+  isRequired: true
+  title: Tuist Commands
+  description: The commands of Tuist, you can specify the specific Tuist command to run. For example; `tuist build` or `tuist install`.
+processFilename: ruby
+processArguments: '%AC_STEP_TEMP%/main.rb'
+files:
+- "main.rb"
